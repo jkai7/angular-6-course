@@ -1,9 +1,9 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core'; // import the @Component
 
-@Component({
-  selector: 'app-server',
-  templateUrl: './server.component.html'
+@Component({ // shows the type of decorator in typescript
+  selector: 'app-server', // nameing our selector for the component
+  templateUrl: './server.component.html'// relative path to our html template
 })
-export class ServerComponent {
+export class ServerComponent { // createing and exporting the class of our server component
 
 }
