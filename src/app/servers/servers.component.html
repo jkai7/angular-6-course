@@ -1,9 +1,16 @@
+<!-- <label>Server Name</label>
+
+<input type="text" class="form-control" (input)="onUpdateServerName($event)"> <-this is event bindiong
+<p>{{ serverName }}</p> -->
 <label>Server Name</label>
 
-<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<input type="text" class="form-control" [(ngModel)]="serverName"> <!-- this is two way binding -->
+
 <p>{{ serverName }}</p>
 
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
+
+<button class="btn btn-danger" [disabled]="!allowNewServer" (click)="onDeleteServer()">Delete Server</button>
 
 <!-- output text(use string interpolation), change a property(use property binding) - dont mix however -->
 <!-- <p [innerText]="allowNewServer"></p> -->
