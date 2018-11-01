@@ -11,6 +11,6 @@ import { AppComponent } from './app.component';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]// hear we refrence our app component (main.ts), therefore, closing the angular circle
 })
 export class AppModule { }
