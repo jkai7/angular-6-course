@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core'; // import the type of decorator, which
 
 // components below module declarations
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component'; // must import any declerations from other components, this is server component
+import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component'; // must import any declerations from other components
 
 @NgModule({ // Ng model is the decorator in ts
   declarations: [
     AppComponent,
-    ServerComponent // declaring our server.component.ts so it is recognized by angular
+    ServerComponent,
+    ServersComponent // declaring our servers.component.ts so it is recognized by angular
   ],
   imports: [
     BrowserModule
